@@ -1,4 +1,4 @@
-# Number Conversion Library
+# Number Conversion Program/Library
 
 A C library for handling various number format conversions, including decimal, hexadecimal, octal, and floating-point numbers.
 
