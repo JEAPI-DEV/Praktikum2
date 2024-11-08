@@ -25,7 +25,7 @@ void int2Binaer(int i, char str[]) {
 }
 
 int str2int(char str[]) {
-    int result = 0, i;
+    int result = 0, i = 0;
     /* hexadecimal */
     if (strstr(str, CASE_HEX_SMALL) || strstr(str, CASE_HEX_BIG)) {
         for (i = 2; str[i] != '\0'; i++) {  /* Start after "0x" */
