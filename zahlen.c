@@ -25,7 +25,7 @@ void int2Binaer(int i, char str[]) {
 }
 
 int str2int(char str[]) {
-    int result = 0, i = 0;
+    int result = 0, i;
     /* hexadecimal */
     if (strstr(str, CASE_HEX_SMALL) || strstr(str, CASE_HEX_BIG)) {
         for (i = 2; str[i] != '\0'; i++) {  /* Start after "0x" */
@@ -42,7 +42,7 @@ int str2int(char str[]) {
     }
 
     /* octal */
-    if (strstr(str, CASE_OCTAL)) {
+    if (str[0] == CASE_OCTAL) {
         for (i = 1; str[i] != '\0'; i++) {  /* Start after "0" */
             if (str[i] < '0' && str[i] > '7') return -1;
             result = result * 8 + (str[i] - '0');
