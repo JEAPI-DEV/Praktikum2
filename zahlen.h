@@ -3,7 +3,7 @@
 
 #define CASE_HEX_SMALL "0x"
 #define CASE_HEX_BIG "0X"
-#define CASE_OCTAL "0"
+#define CASE_OCTAL '0'
 
 /** Verwendune zur Darstellung maximal
  * DIGITS lange Zeichenkette
