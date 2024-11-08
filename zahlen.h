@@ -41,6 +41,6 @@ void int2Binaer(int i, char str[]);
  * Extra fun, convert string to float.
  * does only accept the Base 10 8 and 16 systems.
  */
-float str2float(char str[]);
+float str2float(const char str[]);
 
 #endif
