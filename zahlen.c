@@ -60,7 +60,7 @@ int str2int(char str[]) {
     return result;
 }
 
-float str2float(char str[]) {
+float str2float(const char str[]) {
     float result = 0, afterDot = 0;
     int i = 0;
 
